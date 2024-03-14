@@ -15,7 +15,7 @@ export const options = {
 };
 
 export function test(params) {
-  const res = http.get('http://pegasus-staging-nlb-ingress-5d608c806912d9f0.elb.us-east-2.amazonaws.com');
+  const res = http.get('https://demo-ingress.pauloponciano.digital');
   check(res, {
     'is status 200': (r) => r.status === 200,
   });
